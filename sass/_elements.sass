@@ -1,0 +1,265 @@
+@import "bourbon/bourbon"
+@import "sass/_blocks"
+
+/*Елементы, Модификаторы*/
+
+.h-nav
+	font-size: 0
+	&__link
+		display: block
+		padding: 0 10px
+		text-transform: uppercase
+		color: #aaa
+		line-height: 70px
+		font-size: 16px
+		position: relative
+		&:hover
+			text-decoration: none
+			color: #aaa
+	&__item
+		display: inline-block
+		&:first-child
+			.h-nav__link
+				padding-left: 0
+		&:last-child
+			.h-nav__link
+				padding-right: 0
+	&__item.active
+		.h-nav__link
+			color: #222
+	&__trang
+		position: absolute
+		display: block
+		bottom: 0
+		left: 30px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 5px 6px 5px
+		border-color: transparent transparent #222222 transparent
+
+.h-logo
+	display: inline-block
+	svg
+		width: 165px
+
+.h-panel
+	font-size: 0
+	text-align: right
+	&__item
+		display: inline-block
+		position: relative
+		&::after
+			content: ''
+			display: block
+			width: 1px
+			height: 20px
+			background-color: #ccc
+			position: absolute
+			right: 0
+			top: 50%
+			margin-top: -10px
+		&:last-child
+			&::after
+				display: none
+	&__lang
+		color: #222
+		text-transform: uppercase
+		font-size: 13px
+		position: relative
+		padding-left: 26px
+		padding-right: 15px
+		&::before
+			content: ''
+			width: 16px
+			height: 16px
+			display: block
+			border-radius: 50%
+			position: absolute
+			left: 0
+			top: -1px
+			background-image: url(../img/icons/flags.png)
+			background-position: -52px -1227px
+		&:hover
+			text-decoration: none
+			color: #222
+	&__link
+		display: block
+		padding: 0 15px
+		font-size: 13px
+		.fas
+			color: #222
+
+.h-subnav
+	font-size: 0
+	&__item
+		display: inline-block
+		padding: 0 15px
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+	&__link
+		display: block
+		color: #fff
+		text-transform: uppercase
+		line-height: 45px
+		position: relative
+		font-size: 13px
+		&-hot
+			color: #fd4f57
+		&:hover
+			text-decoration: none
+			color: #fff
+			&::after
+				content: ''
+				height: 2px
+				left: 0
+				right: 0
+				bottom: 0
+				background-color: #fff
+				position: absolute
+				display: block
+
+.h-search
+	width: 220px
+	position: relative
+	.fas
+		color: #222
+		display: block
+		position: absolute
+		right: 9px
+		top: 9px
+		z-index: 1
+	&__input
+		height: 35px
+		display: block
+		width: 100%
+		padding-right: 35px
+		padding-left: 10px
+		border: none
+		font-size: 13px
+	&__button
+		width: 35px
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		text-indent: -9999px
+		border: none
+		background-color: transparent
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0
+		z-index: 2
+		cursor: pointer
+
+.p-lineslider
+	&__item
+		box-shadow: 0 1px 1px 0 rgba(0,0,0,.11)
+	&__text
+		font-size: 15px
+		color: #222
+		display: block
+		width: 100%
+		text-align: center
+		height: 40px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		p
+			display: inline
+		strong, b
+			font-weight: bold
+			display: inline-block
+		a
+			text-decoration: underline
+			color: #222
+			display: inline-block
+			margin-left: 5px
+			&:hover
+				text-decoration: none
+				color: #222
+		div
+			margin-right: 4px
+			display: inline-block
+			letter-spacing: 0.1em
+		.fas
+			margin-left: 5px
+
+.p-banner
+	&__img
+		height: 480px
+		display: block
+		width: 100%
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		&-little
+			height: 320px
+			background-size: auto 100%
+	&__description
+		text-align: center
+		padding-top: 40px
+		font-weight: 700
+		h1
+			display: block
+			width: 100%
+			color: #222
+			font-size: 50px
+			letter-spacing: .2rem
+			margin-bottom: 20px
+		h2
+			font-size: 36px
+			display: block
+			width: 100%
+			color: #222
+			letter-spacing: .2rem
+			margin-bottom: 20px
+			letter-spacing: normal
+		a
+			position: relative
+			padding-right: 13px
+			display: inline-block
+			text-transform: uppercase
+			font-weight: 700
+			color: #222
+			font-size: 13px
+			&:hover
+				text-decoration: underline
+				color: #222
+			.fas
+				position: absolute
+				right: 0
+				top: 6px
+				font-size: 13px
+
+.p-subtitle
+	display: block
+	font-weight: 700
+	font-size: 16px
+	color: #222
+	&__wrapper
+		margin-top: 40px
+	&__button
+		background-color: #222
+		color: #fff
+		border: none
+		line-height: 44px
+		width: 192px
+		display: block
+		margin: 0 auto
+		border-radius: 4px
+		&:hover
+			color: #fff
+			text-decoration: none
+			opacity: .8
