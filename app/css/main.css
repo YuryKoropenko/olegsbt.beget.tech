@@ -134,8 +134,20 @@ body {
   padding-bottom: 30px;
 }
 
-.page__p-brandbaner {
+.page__p-collection {
   padding-bottom: 30px;
+}
+
+.page__p-vibor {
+  padding-bottom: 30px;
+}
+
+.footer {
+  margin-top: 30px;
+}
+
+.footer__line {
+  background-color: #aaa;
 }
 
 /*Елементы, Модификаторы*/
@@ -559,6 +571,10 @@ body {
   position: relative;
 }
 
+.p-article-big {
+  height: 622px;
+}
+
 .p-article__info {
   position: absolute;
   z-index: 4;
@@ -706,4 +722,219 @@ body {
 
 .p-brandbaner__more:hover {
   text-decoration: underline;
+}
+
+.p-collection {
+  height: 497px;
+  display: block;
+  width: 100%;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.p-collection__text {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+  text-align: center;
+}
+
+.p-collection__title {
+  display: block;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  margin-bottom: 5px;
+  color: #222;
+  font-size: 36px;
+  line-height: 5.4rem;
+}
+
+.p-collection__col {
+  color: #222;
+  margin-right: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  font-size: 13px;
+  line-height: 2.2rem;
+  font-family: "Polaris-Bold" ,sans-serif;
+}
+
+.p-collection__col:hover {
+  text-decoration: underline;
+  color: #222;
+}
+
+.p-vibor {
+  height: 355px;
+  display: block;
+  width: 100%;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.p-vibor__text {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+  text-align: center;
+}
+
+.p-vibor__title {
+  display: block;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  margin-bottom: 5px;
+  color: #222;
+  font-size: 30px;
+  line-height: 4.3rem;
+}
+
+.p-vibor__col {
+  color: #222;
+  margin-right: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  font-size: 13px;
+  line-height: 2.2rem;
+  font-family: "Polaris-Bold" ,sans-serif;
+}
+
+.p-vibor__col:hover {
+  text-decoration: underline;
+  color: #222;
+}
+
+.p-videobaner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 30px;
+  height: 536px;
+  border: 1px solid #888;
+}
+
+.p-videobaner__left {
+  padding-right: 30px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.p-videobaner__right {
+  max-width: 66.66%;
+  width: 100%;
+}
+
+.p-videobaner__right iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.p-videobaner__top {
+  display: inline-block;
+  color: #fff;
+  background-color: #222;
+  position: relative;
+  text-align: center;
+  padding: 6px 12px;
+  min-width: 120px;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 1.9rem;
+  letter-spacing: .05rem;
+}
+
+.p-videobaner__top::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  bottom: -5px;
+  left: calc(50% - 6px);
+  background-color: #222;
+}
+
+.p-videobaner__description {
+  display: block;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  margin-bottom: 5px;
+  color: #222;
+  font-size: 30px;
+  line-height: 4.3rem;
+  text-align: center;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.p-videobaner__col {
+  color: #222;
+  margin-right: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  font-size: 13px;
+  line-height: 2.2rem;
+  font-family: "Polaris-Bold" ,sans-serif;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+}
+
+.p-videobaner__col:hover {
+  text-decoration: underline;
+  color: #222;
+}
+
+.p-modulepos {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-modulepos__item {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.p-modulepos__link {
+  display: inline-block;
+  padding-left: 40px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Polaris-Bold" ,sans-serif;
+  font-size: 1.6rem;
 }
