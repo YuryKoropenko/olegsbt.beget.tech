@@ -603,6 +603,20 @@
 		width: 100%
 		display: block
 		text-align: center
+		position: relative
+		&::after
+			content: ''
+			width: 1px
+			height: 35px
+			background-color: #fff
+			right: 0
+			top: 50%
+			margin-top: -17.5px
+			display: block
+			position: absolute
+		&:last-child
+			&::after
+				display: none
 	&__link
 		display: inline-block
 		padding-left: 40px
@@ -611,3 +625,162 @@
 		font-weight: 700
 		font-family: "Polaris-Bold" ,sans-serif
 		font-size: 1.6rem
+		&:hover
+			text-decoration: none
+			color: #fff
+
+.f-podp
+	width: 402px
+	margin: 0 auto
+	text-align: center
+	&__title
+		display: block
+		font-family: Polaris-Bold
+		font-size: 22px
+		line-height: 28px
+		padding: 5px
+	&__description
+		display: block
+		font-family: Polaris-Book
+		line-height: 22px
+		font-size: 15px
+		margin-bottom: 15px
+	&__list
+		text-align: center
+	&__item
+		display: inline-block
+		margin-right: 5px
+		&:last-child
+			margin-right: 0
+		input
+			display: none
+			&:checked + label::after
+				display: block
+		label
+			position: relative
+			padding-left: 20px
+			font-size: 15px
+			color: #555
+			&::before
+				content: ''
+				display: block
+				width: 16px
+				height: 16px
+				border: 1px solid #000
+				border-radius: 50%
+				position: absolute
+				left: 0
+				top: 50%
+				margin-top: -8px
+			&::after
+				content: ''
+				width: 8px
+				height: 8px
+				display: none
+				position: absolute
+				border-radius: 50%
+				background-color: #000
+				left: 4px
+				top: 50%
+				margin-top: -4px
+	&__little
+		font-size: 9px
+		line-height: 16px
+		text-align: center
+		display: block
+		margin-top: 15px
+		color: #222
+		a
+			font-weight: 700
+			color: #222
+			text-decoration: underline
+			&:hover
+				color: #222
+				text-decoration: none
+	&__form
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 8px
+	&__input
+		width: 260px
+		padding: 9px 9px 9px 9px
+		border: 1px solid #dfdfdf
+		height: 44px
+		display: inline-block
+		border-radius: 4px
+	&__button
+		cursor: pointer
+		display: inline-block
+		width: 126px
+		border: none
+		position: relative
+		margin: auto
+		margin-left: 10px
+		height: 44px!important
+		white-space: nowrap
+		line-height: 23px!important
+		background-color: #0c0c0c
+		color: #fff
+		font-family: Polaris-Bold
+		border-radius: 4px!important
+		min-width: 126px!important
+		text-align: center
+
+.f-menu
+	&::before
+		content: ''
+		display: table
+	&::after
+		content: ''
+		display: table
+		clear: both
+	&__left
+		width: 50%
+		float: left
+	&__right
+		width: 50%
+		float: right
+	&__block
+		margin-top: 20px
+		&:first-child
+			margin-top: 0
+	&__title
+		font-size: 1.3rem
+		color: #aaa
+		border-bottom: none
+		font-weight: 700
+		font-family: Polaris-Condensed-Bold, Polaris-Bold, sans-serif
+		letter-spacing: .2em
+		text-transform: uppercase
+	&__pril
+		font-family: Polaris-Book,sans-serif
+		line-height: 1.58em
+		display: inline-block
+		padding: 15px 0 15px 54px
+		color: #fff
+		padding-left: 54px
+		&:hover
+			text-decoration: none
+			color: #fff
+	&__social
+	&__soc
+		margin-right: 5px
+		width: 50px
+		height: 32px
+		background-repeat: no-repeat
+	&__soclink
+	&__lang
+		.h-panel__lang
+			color: #fff
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+			margin: 15px 0 15px
+			display: block
+			padding-top: 0
+			text-transform: none

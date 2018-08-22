@@ -150,6 +150,32 @@ body {
   background-color: #aaa;
 }
 
+.footer__podp {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  background-position: centertop;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #9a9a9a;
+  background-image: url(../img/06cb71694863789ccb797d8752a86cf2_1580_267.jpeg);
+}
+
+.footer__black {
+  background-color: #222;
+  padding: 15px 0;
+}
+
+.footer__f-copy {
+  color: #aaa;
+  font-size: 1.1rem;
+  line-height: 1.87rem;
+  padding-top: 30px;
+}
+
+.footer__f-copy strong {
+  font-weight: 700;
+}
+
 /*Елементы, Модификаторы*/
 .h-nav {
   font-size: 0;
@@ -927,6 +953,23 @@ body {
   width: 100%;
   display: block;
   text-align: center;
+  position: relative;
+}
+
+.p-modulepos__item::after {
+  content: '';
+  width: 1px;
+  height: 35px;
+  background-color: #fff;
+  right: 0;
+  top: 50%;
+  margin-top: -17.5px;
+  display: block;
+  position: absolute;
+}
+
+.p-modulepos__item:last-child::after {
+  display: none;
 }
 
 .p-modulepos__link {
@@ -937,4 +980,215 @@ body {
   font-weight: 700;
   font-family: "Polaris-Bold" ,sans-serif;
   font-size: 1.6rem;
+}
+
+.p-modulepos__link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.f-podp {
+  width: 402px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.f-podp__title {
+  display: block;
+  font-family: Polaris-Bold;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 5px;
+}
+
+.f-podp__description {
+  display: block;
+  font-family: Polaris-Book;
+  line-height: 22px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.f-podp__list {
+  text-align: center;
+}
+
+.f-podp__item {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.f-podp__item:last-child {
+  margin-right: 0;
+}
+
+.f-podp__item input {
+  display: none;
+}
+
+.f-podp__item input:checked + label::after {
+  display: block;
+}
+
+.f-podp__item label {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #555;
+}
+
+.f-podp__item label::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.f-podp__item label::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: none;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000;
+  left: 4px;
+  top: 50%;
+  margin-top: -4px;
+}
+
+.f-podp__little {
+  font-size: 9px;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  color: #222;
+}
+
+.f-podp__little a {
+  font-weight: 700;
+  color: #222;
+  text-decoration: underline;
+}
+
+.f-podp__little a:hover {
+  color: #222;
+  text-decoration: none;
+}
+
+.f-podp__form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.f-podp__input {
+  width: 260px;
+  padding: 9px 9px 9px 9px;
+  border: 1px solid #dfdfdf;
+  height: 44px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.f-podp__button {
+  cursor: pointer;
+  display: inline-block;
+  width: 126px;
+  border: none;
+  position: relative;
+  margin: auto;
+  margin-left: 10px;
+  height: 44px !important;
+  white-space: nowrap;
+  line-height: 23px !important;
+  background-color: #0c0c0c;
+  color: #fff;
+  font-family: Polaris-Bold;
+  border-radius: 4px !important;
+  min-width: 126px !important;
+  text-align: center;
+}
+
+.f-menu::before {
+  content: '';
+  display: table;
+}
+
+.f-menu::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.f-menu__left {
+  width: 50%;
+  float: left;
+}
+
+.f-menu__right {
+  width: 50%;
+  float: right;
+}
+
+.f-menu__block {
+  margin-top: 20px;
+}
+
+.f-menu__block:first-child {
+  margin-top: 0;
+}
+
+.f-menu__title {
+  font-size: 1.3rem;
+  color: #aaa;
+  border-bottom: none;
+  font-weight: 700;
+  font-family: Polaris-Condensed-Bold, Polaris-Bold, sans-serif;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.f-menu__pril {
+  font-family: Polaris-Book,sans-serif;
+  line-height: 1.58em;
+  display: inline-block;
+  padding: 15px 0 15px 54px;
+  color: #fff;
+  padding-left: 54px;
+}
+
+.f-menu__pril:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.f-menu__soc {
+  margin-right: 5px;
+  width: 50px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.f-menu__lang .h-panel__lang {
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 15px 0 15px;
+  display: block;
+  padding-top: 0;
+  text-transform: none;
 }
