@@ -120,6 +120,19 @@
 				background-color: #fff
 				position: absolute
 				display: block
+	&__item.active
+		.h-subnav__link
+			text-decoration: none
+			color: #fff
+			&::after
+				content: ''
+				height: 2px
+				left: 0
+				right: 0
+				bottom: 0
+				background-color: #fff
+				position: absolute
+				display: block
 
 .h-search
 	width: 220px
@@ -763,11 +776,39 @@
 		display: inline-block
 		padding: 15px 0 15px 54px
 		color: #fff
-		padding-left: 54px
+		padding-left: 50px
+		position: relative
+		.fas
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+			color: #fff
+			font-size: 3.4rem
 		&:hover
 			text-decoration: none
 			color: #fff
-	&__social
+	&__opl
+		display: block
+		padding-top: 10px
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__oplitem
+		float: left
+		display: block
+		padding-right: 5px
+	&__oplink
+		width: 50px
+		height: 32px
+		background-image: url(../img/icons/payments_footer.svg);
+		background-repeat: no-repeat
+		display: block
 	&__soc
 		margin-right: 5px
 		width: 50px
@@ -784,3 +825,131 @@
 			display: block
 			padding-top: 0
 			text-transform: none
+	&__soc
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 16px
+	&__socitem
+		display: block
+		padding-right: 18px
+	&__soclink
+		display: inline-block
+		.fab
+			font-size: 2.2rem
+			color: #fff
+	&__list
+		padding-top: 10px
+		display: block
+	&__item
+		padding-bottom: 6px
+		display: block
+	&__link
+		display: inline-block
+		color: #fff
+		font-size: 13px
+		&:hover
+			text-decoration: none
+			color: #fff
+
+.h-menu
+	&-col
+		width: 33.3%
+		float: left
+		display: block
+	&-alf
+		width: 228px
+		float: right
+		display: block
+	&-img
+		width: 451px
+		float: right
+		background-color: #fff
+		min-height: 485px
+	&__title
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: 700
+		letter-spacing: .2em
+		font-family: Polaris-Condensed-Bold,Polaris-Bold,sans-serif
+		padding-bottom: 8px
+		padding-top: 16px
+		color: #222
+	&__list
+	&__item
+		display: block
+		padding-bottom: 8px
+	&__link
+		padding: 0
+		line-height: 1.5em
+		white-space: normal
+		color: #222
+		font-size: 13px
+		&:hover
+			color: #222
+			text-decoration: underline
+	&__img
+		display: block
+		width: 100%
+		height: auto
+	&__actual
+		display: block
+		color: #c2a67d
+		font-family: Polaris-Bold,sans-serif
+		line-height: 22px
+		font-size: 13px
+	&__zag
+		display: block
+		font-weight: 700
+		line-height: 2.21rem
+		text-transform: uppercase
+		letter-spacing: .2em
+		font-size: 13px
+		color: #222
+		&:hover
+			text-decoration: none
+			color: #222
+	&__vid
+		display: block
+		margin-top: .5em
+		color: #222
+		font-size: 13px
+	&__block
+		padding: 10px
+	&__sort
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__sortlink
+		font-weight: 700
+		color: #222
+		font-family: Polaris-Condensed-Bold,Polaris-Bold,sans-serif
+		font-size: 13px
+		line-height: 2em
+		display: block
+		&:hover
+			color: #222
+			text-decoration: underline
+	&__sortitem
+		width: 20%
+		letter-spacing: .2em
+		float: left
+		padding-bottom: 8px
+		&-first
+			width: 40%
+			.h-menu__sortlink
+	&__allcat
+		font-family: Polaris-Condensed-Bold,Polaris-Bold,sans-serif
+		font-size: 13px
+		color: #222
+		&:hover
+			color: #222
+			text-decoration: underline
